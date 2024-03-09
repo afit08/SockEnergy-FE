@@ -38,4 +38,5 @@ COPY nginx.conf /etc/nginx/sites-available/
 RUN ln -s /etc/nginx/sites-available/nginx.conf /etc/nginx/sites-enabled/
 
 # Command to run your application
-CMD ["npm", "run dev"]
+CMD ["npm", "run", "dev"]
+
