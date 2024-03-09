@@ -21,7 +21,7 @@ RUN npm install
 COPY . .
 
 # Expose the port your app will run on
-EXPOSE 3000
+EXPOSE 3100
 
 # Install Nginx
 RUN apt-get update \
