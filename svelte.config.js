@@ -16,7 +16,6 @@ const config = {
         'default-src': ["'self'", 'http://153.92.1.221:3000/'],
         'script-src': [
           "'self'",
-          "'unsafe-inline'",
           'https://unpkg.com/vis-network/standalone/umd/vis-network.min.js',
           'http://cdn.quilljs.com/',
           'https://cdnjs.cloudflare.com/',
@@ -27,7 +26,6 @@ const config = {
         ],
         'style-src': [
           "'self'",
-          "'unsafe-inline'",
           'http://cdn.quilljs.com/',
           'https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css',
           'https://cdn.jsdelivr.net/',
@@ -41,6 +39,7 @@ const config = {
         ],
         'connect-src': ["'self' http://153.92.1.221:3000/"],
         'frame-src': ["'self'"],
+        'frame-ancestors': ["'none'"],
         'font-src': ["'self' https://fonts.gstatic.com/"],
         'media-src': ["'self'"],
         'object-src': ["'none'"],
