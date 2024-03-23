@@ -13,7 +13,7 @@ const config = {
     },
     csp: {
       directives: {
-        'default-src': "'self' http://153.92.1.221:3000/",
+        'default-src': ["'self'", 'http://153.92.1.221:3000/'],
         'script-src': [
           "'self'",
           "'unsafe-inline'",
@@ -39,18 +39,17 @@ const config = {
           'http://153.92.1.221:3000/',
           'http://153.92.1.221:9000',
         ],
-        'connect-src': "'self' http://153.92.1.221:3000/",
-        'frame-src': "'self'",
-        'font-src': "'self' https://fonts.gstatic.com/",
-        'media-src': "'self'",
-        'object-src': "'none'",
-        'manifest-src': "'self'",
-        'form-action': "'self'",
+        'connect-src': ["'self' http://153.92.1.221:3000/"],
+        'frame-src': ["'self'"],
+        'font-src': ["'self' https://fonts.gstatic.com/"],
+        'media-src': ["'self'"],
+        'object-src': ["'none'"],
+        'manifest-src': ["'self'"],
+        'form-action': ["'self'"],
       },
       reportOnly: {
-        directives: {
-          'script-src': ['self'],
-        },
+        'script-src': ['self'],
+        'report-uri': ['http://153.92.1.221:3000/'],
       },
     },
   },
